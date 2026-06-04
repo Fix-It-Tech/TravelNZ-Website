@@ -23,11 +23,11 @@ header {
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .header-links a:hover {
-    background-color: lightgrey;
+    background-color: whitesmoke;
 }
 
 
@@ -198,6 +198,8 @@ p {
     border-radius: 20px;    
 }
 
+/* This is to make adjustments to the website on smaller screens like mobile */
+
 @media (max-width: 768px) {
     .grid-container {
         flex-direction: column;
@@ -227,6 +229,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: whitesmoke;
 }
 
 .left-footer a  h6{
@@ -240,7 +243,6 @@ footer {
 
 }
 .left-footer a {
-    text-decoration: none;
     color: #000000; 
     font-family: 'Inter', sans-serif;
     font-size: 12px;
@@ -262,7 +264,7 @@ footer {
 
 .to-do h2 {
     font-size: 35px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -281,10 +283,11 @@ footer {
     gap: 40px;
     align-items: center;
     margin-bottom: 70px;
+    margin-top: 70px;
     max-width: 1100px;
     justify-content: space-between;
-    padding-bottom: 25px;
-    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 70px;
+    border-bottom: 2px solid whitesmoke;
     margin-left: auto;
     margin-right: auto;
 }
@@ -304,6 +307,7 @@ footer {
 
 }
 
+/* This is to make adjustments to the website on smaller screens like mobile */
 @media (max-width: 768px) {
     .todo-item {
         flex-direction: column;
@@ -425,6 +429,11 @@ footer {
     font-family: 'Inter', sans-serif; 
 }
 
+.section-desc {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
 .tour-subtitle {
     font-size: 15px;
     margin-bottom: 15px;
@@ -444,7 +453,7 @@ footer {
     flex-grow: 1;
     line-height: 1.65;
     margin-bottom: 25px;
-    text-align:center;
+    text-align:left;
 }
 
 .book-btn {
