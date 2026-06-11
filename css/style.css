@@ -27,7 +27,9 @@ header {
 }
 
 .header-links a:hover {
-    background-color: whitesmoke;
+    transition-duration: 0.5s;
+    background-color: darkgrey;
+    color: white;
 }
 
 
@@ -36,7 +38,7 @@ header {
     color: #000000; 
     font-family: 'Inter', sans-serif;
     font-weight: 2000;
-    font-size: 24px;
+    font-size: 30px;
 
 }
 
@@ -70,9 +72,11 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.45);
+    background: lightgrey;
+    opacity: 25%;
     z-index: 1;
     border-radius: 10px;
+
 }
 .hero-content {
     font-family: 'Inter', sans-serif;
@@ -105,6 +109,7 @@ header {
 .hero-btn.learn-more a{
     text-decoration: none;
     color: white;
+    padding: 10px 20px;
 }
 
 .hero-btn {
@@ -126,12 +131,12 @@ header {
 
 .hero-btn.tours  {
     background: white;
-    
 }
 .hero-btn.tours a {
     color: black;
     text-decoration: none;
-
+    padding: 10px 30px;
+    
 }
 
 
@@ -160,6 +165,8 @@ p {
 .body-btn a:hover {
     background-color: lightgrey;
 }
+
+
 /* Welcome Customization */
 
 .welcome {
@@ -200,7 +207,7 @@ p {
 
 /* This is to make adjustments to the website on smaller screens like mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .grid-container {
         flex-direction: column;
         gap: 35px;
@@ -246,7 +253,11 @@ footer {
     color: #000000; 
     font-family: 'Inter', sans-serif;
     font-size: 12px;
+    text-decoration: none;
+}
 
+.left-footer a:hover {
+    text-decoration: underline;
 }
 
 .right-footer p {
@@ -287,9 +298,11 @@ footer {
     max-width: 1100px;
     justify-content: space-between;
     padding-bottom: 70px;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
     margin-left: auto;
     margin-right: auto;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .todo-item h3 {
@@ -301,14 +314,13 @@ footer {
     flex: 1;
     max-width: 480px;
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     width: 100%;
     height: 100%;
 
 }
 
 /* This is to make adjustments to the website on smaller screens like mobile */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .todo-item {
         flex-direction: column;
         text-align: center;
@@ -352,6 +364,7 @@ footer {
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
     text-align: left;
+
 }
 
 
@@ -419,8 +432,8 @@ footer {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-
 }
+
 
 .tour-card h3 {
     margin: 0 0 8px 0;
